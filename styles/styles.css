@@ -1,0 +1,51 @@
+:root {
+    --darkGray: hsl(0, 0%, 20%);
+    --purple500: hsl(273, 100%, 50%);
+    --purple600: hsl(273, 100%, 40%);
+    --purple700: hsl(273, 95%, 34%);
+    --purple800: hsl(273, 91%, 17%);
+    --lightTransPurple: rgba(102, 0, 204, 0.226);
+    --boardDefault: hsl(268, 79%, 85%);
+    --boardActive: hsl(268, 79%, 50%);
+}
+body {
+    margin: 0;
+    font-family: sans-serif;
+    color: var(--darkGray);
+}
+
+#main-header {
+    background: linear-gradient(to bottom, var(--purple600), var(--purple500));
+    color: white;
+    padding: 2rem 5%;
+    text-align: center;
+}
+
+.btn {
+    background: radial-gradient(circle, var(--purple600), var(--purple500));
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    font: inherit;
+}
+
+.btn:hover {
+    background: radial-gradient(circle, var(--purple500), var(--purple600));
+    border-color: var(--purple600);
+}
+
+.btn-alt {
+    background: transparent;
+    border-color: transparent;
+    color: var(--purple500);
+}
+
+.btn-alt:hover {
+    background: var(--lightTransPurple);
+    border-color: transparent;
+    color: var(--purple600);
+}
